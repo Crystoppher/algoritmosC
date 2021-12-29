@@ -6,68 +6,34 @@
  *
  ********************************************/
 
-
 #include <stdio.h>
 #include <stdlib.h>
 
-void menu(void);
+void printMenu();
 
- struct registro
+ int main()
  {
-         char nome[31];     //armazena o nome dos alunos registrado no sistema
-         char endereco[41]; //armazena o endereco dos alunos registrado no sistema
- };
+ 	printMenu();
+ 	
+ 	return 0;
+ }
 
-        struct registro  aluno; //cria variável aluno do tipo struct
-
-int main()
-{
-        int op = 0; 
-
- 	while(1)
-	{
-		printf("\nDeseja cadastrar aluno?\n");
-		printf("1 - SIM\n2 - NAO");
-        printf("\n=======================\n");
-        fflush(stdin);
-		scanf("%d",&op);  
-        //fflush(stdin);
-
-		if(op == 1)
-		{
-			break; //saída do laço infinito while
-		}
-		else {
-			printf("PROGRAMA FINALIZADO!\n");
-			exit(1);
-		}
-	}	 
-
-	menu();//chamada da função menu 
-
-	return 0;
-}
-
-void menu(void)
-{
-         printf("\nBUG! :( \n");
-         
-
-	     printf("\n\n---------- REGISTRO DE ALUNOS -----------\n\n");
-         printf("\nNOME DO ALUNO: \n");
-         fflush(stdin);
-         fgets(aluno.nome, 40, stdin);
-		 //scanf("%s",&aluno.nome);  
-         
-
-         printf("\nENDERECO  DO ALUNO: \n");
- 		 scanf("%c",&aluno.endereco);  
-         //fflush(stdin);
+void printMenu(){
 	
-         putchar('\n');
-         printf("---------- REGISTRO FINALIZADO  -----------\n\n");
-         printf("NOME         : %s",aluno.nome);
-         printf("ENDERECO     : %s",aluno.endereco);
-         putchar('\n');
-	 return;
-}
+  putchar('\n');
+  printf(" *********************************************\n");
+  printf(" *                                           *\n");
+  printf(" *   $$$  $$$   $$$$$   $$    $   $     $    *\n");
+  printf(" *   $  $$  $   $       $ $   $   $     $    *\n");
+  printf(" *   $      $   $$$$    $  $  $   $     $    *\n");
+  printf(" *   $      $   $       $   $ $   $     $    *\n");
+  printf(" *   $      $   $$$$$   $    $$    $$$$$     *\n");
+  printf(" *                                           *\n");
+  printf(" *********************************************\n");
+  putchar('\n');
+  printf("\tPrecione qualquer tecla!");
+  getchar();
+  system("cls");
+  
+   }
+
