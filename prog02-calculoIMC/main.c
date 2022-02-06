@@ -26,7 +26,13 @@ int main()
 	      
 	unsigned short int TRATAMENTO_1 = 0;
 	unsigned short int TRATAMENTO_2 = 0;
+	unsigned short int i = 0;
 	
+	for(;;)
+	{
+		
+
+	putchar('\n');
 	printf("Informe seu PESO: ");
 	TRATAMENTO_1 = scanf("%f",&peso);
 	
@@ -62,6 +68,14 @@ int main()
 	printf("MAIOR QUE 40,0\t\t     GRAVE\t  III\n");
 	printf("==============================================\n");
 	
+	putchar('\n');
+	printf("DESEJA FINALIZAR O PROGRAMA ?\n");
+	printf(" 1 - SIM    0 -  NAO\n\n");
+	scanf("%d",&i);
+	if(i) 	break;	//força a saída imediata do loop
+	system("cls");
+	
+	}/*end laco for*/
 	
     return 0;
     
