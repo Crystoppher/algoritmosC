@@ -1,22 +1,34 @@
+/********************************************
+ * 
+ * NOME:      CRYSTOPPHER SIMÃ•ES TRINDADE
+ * DATA:      25/11/2021
+ * PROGRAMA:  MENU- V1.0 
+ *
+ ********************************************/
+ 
+ /* --- Bibliotecas --- */
 #include <stdio.h>
 #include <stdlib.h>
 
 #define LINHA 3  /* número de linhas para apresentação do símbolo */ 
 #define N_REP 30 /* número de vezes que símbolo será repetido na tela! */
 
+
+/* --- Declaração de funções --- */
 void __menu();
 
-
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
-
+/* ========================================================================= */
+/* --- Função Principal --- */
 int main(int argc, char *argv[]) {
 	
 	__menu();
 	printf("\nApresentacao do MENU de opcao.\n");
 	
-	return 0;
-}
+	return 0; 
+} /* end main */
 
+/* ========================================================================= */
+/* --- Desenvolvimento das funções --- */
 void __menu()
 {
 		int i,j;

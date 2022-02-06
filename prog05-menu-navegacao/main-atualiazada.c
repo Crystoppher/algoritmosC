@@ -1,11 +1,4 @@
-/********************************************
- * 
- * NOME:      CRYSTOPPHER SIMÕES TRINDADE
- * DATA:      06/02/2022
- * PROGRAMA:  MENU NAVEGAVEL - V1 
- *
- ********************************************/
- 
+
 /* ========================================================================= */
 /* --- Bibliotecas --- */
 #include <stdio.h>
@@ -153,4 +146,5 @@ void menu04()
 		default: printf("\nINVALIDO!\n");
 	}/* end switch */
 }/* end menu4 */
+
 

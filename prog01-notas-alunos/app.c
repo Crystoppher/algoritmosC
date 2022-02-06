@@ -6,18 +6,26 @@
  *
  ********************************************/
 
+/* --- Bibliotecas --- */
 #include <stdio.h>
 #include <stdlib.h>
 
+/* --- Declaração de funções --- */
 void printMenu();
 
+
+/* ========================================================================= */
+/* --- Função Principal --- */
  int main()
  {
  	printMenu();
  	
  	return 0;
- }
+ } /* end main */
 
+
+/* ========================================================================= */
+/* --- Desenvolvimento das funções --- */
 void printMenu(){
 	
   putchar('\n');
@@ -36,4 +44,5 @@ void printMenu(){
   system("cls");
   
    }
+
 
